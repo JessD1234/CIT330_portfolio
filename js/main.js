@@ -1,4 +1,4 @@
-var weekNav = document.getElementById ("week-navigation").innerHTML;
+var weekNav = document.querySelector(".week-navigation");
 
 var weekLinks = [
     { label = "Week 1", url="week1.html" },
