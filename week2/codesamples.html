@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        
+        
+        function counting() {
+            var numbers = document.getElementById("input1").value;
+            numbers = parseInt(numbers)
+           
+            if ( numbers !== NaN) {
+                adding(numbers);
+        }
+            
+            function adding(numbers) {
+            var sum = 0
+  
+            for (let i = 1; i <= numbers; i++) {
+            sum += i;
+  
+             document.getElementById("div1").innerHTML = sum;
+            }
+           }
+        }
+
+           function adding() {
+            var number1 = document.getElementById("input2").value;
+            number1 = parseInt(number1);
+
+            var number2 = document.getElementById("input3").value;
+            number2 = parseInt(number2);
+
+            var total = number1 + number2;
+
+            document.getElementById("div2").innerHTML = total;
+
+           }
+
+        
+        
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input1">
+    <button type="button" onclick="counting()">Count</button>
+    <div id="div1"></div>
+    <br/>
+    <input type="text" id="input2">
+    <input type="text" id="input3">
+    <button type="button" onclick="adding()">Add Both</button>
+    <div id="div2"></div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+.board {
+    font-size: 145px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+}
+
+.box {
+    border: 3px solid black;
+}
+
+.box:nth-child(1) {
+    border-top: none;
+    border-left: none;
+}
+
+.box:nth-child(2) {
+    border-top: none;
+}
+
+.box:nth-child(3) {
+    border-top: none;
+    border-right: none;
+}
+
+.box:nth-child(4) {
+    border-left: none;
+}
+
+.box:nth-child(6) {
+    border-right: none;
+}
+
+.box:nth-child(7) {
+    border-left: none;
+    border-bottom: none;
+}
+
+.box:nth-child(8) {
+    border-bottom: none;
+}
+
+.box:nth-child(9) {
+    border-bottom: none;
+    border-right: none;
+}
