@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week 4 | Notes</title>
+    </head>
+    <body>
+        <h1>Notes:</h1>
+       <p>Finally have access to the book! Yay!</p>
+       <p>A few things to note about form setup:</p>
+        <ul>
+            <li>The 'action' is the URL the form information is sent to. </li>
+            <li>The 'name' is how the inforamtion is accesssed by the javascript.</li>
+            <li>Forms are processed by a server using PHP and the likes. Javascript can also process it before it's sent.</li>
+        </ul>
+        <p>“var form = document.forms[0];” = “form = document.getElementsByTagname('form')[0]”. Either can be used to call on the form in Javascript. The number at the end can be replaced by ['the name of the form'].</p>
+        <p>Methods and events used with forms:</p>
+        <ul>
+            <li>form.submit() submits the form (to the server?). This can be assigned to a button.</li>
+            <li>form.reset() resets the form back to its original settings. This can be assigned to a button. Rest buttons aren't considered best practice, sine they're easy to accidentally click.</li>
+            <li>form.action = 'URL' can change the URL the form is submitting to.</li>
+            <li>“var form = document.forms.search;<br>
+                form.addEventListener ("submit", search, false);<br>
+                
+                function search() {<br>
+                  alert("Submitted");<br>
+                }”<br>
+                <br>
+                This code listens for the submit action and will send the form to hte Javascript before it's sent on to the server to be processed.</li>
+                <li>event.preventDefault(); prevents a default action from being performed, such as submitting the form.</li>
+                <li></li>
+        </ul>
+        <h2>Questions:</h2>
+        <p>What's the difference between proceessing a form on the back and front end? Can you skip one, or do you need both? What is required for a server to process it, just a knowledge of PHP? (Where do I learn PHP? BYUI Class about it?)</p>
+        <p>If 'click' and 'touchend' function with both a mouseclick and a touchscreen tap, what's the difference, and what is best practices for using them?</p>
+    </body>
+    </html>
