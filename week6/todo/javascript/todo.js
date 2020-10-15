@@ -1,3 +1,5 @@
+"use strict";
+
 //find the needed elements
 const list = document.getElementById("list");
 const input = document.getElementById("input");
@@ -18,7 +20,7 @@ function addToDo (newItem) {
                 </li>
                 `;
     const position = "beforeend";
-    list.insertAdjacentElement(position, item);
+    list.insertAdjacentHTML(position, item);
 }
 
 addToDo("Swim!");
