@@ -22,3 +22,5 @@ function addToDo (newItem) {
 }
 
 addToDo("Swim!");
+
+hi
