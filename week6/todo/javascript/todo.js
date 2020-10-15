@@ -23,4 +23,6 @@ function addToDo (newItem) {
 
 addToDo("Swim!");
 
-hi
+function alertuser() {
+    alert("Hi");
+}
