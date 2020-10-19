@@ -1,3 +1,102 @@
-.inline {
-    display: inline;
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/*Layout */
+body {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+} 
+
+.todo-item { 
+    width: 500px;
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+    text-align: left;
+    padding-right: 15px;
+    }
+
+.todo-content {
+    padding-left: 20px;
+}
+
+#todos {
+    margin-left: 450px;
+    margin-bottom: 40px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+    color: teal;
+}
+
+#add-buttons {
+    margin-top: 20px;
+}
+
+header {
+    background-color: teal;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+/*button styles*/
+
+button {
+    cursor: pointer;
+}
+
+.complete-button {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: 5px solid teal;
+    font-size: 20px;
+    padding: 0px;
+}
+
+.delete-button, #addButton, #resetFilter, #completeFilter, #unfinishedFilter, #resetButton {
+    background-color: white;
+    color: teal;
+    font-size: 20px;
+    border: none;
+}
+
+#addButton {
+    font-size: 30px;
+}
+
+#resetFilter:hover, #completeFilter:hover, #unfinishedFilter:hover, #resetButton:hover {
+    border-bottom: 2px solid teal;
+}
+
+
+
+/*Text Styles*/
+h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+input {
+    font-family: 'Shadows Into Light', cursive;
+    color: teal;
+    font-size: 20px;
+    padding: 10px;
+    padding-bottom: 0px;
+    border: 0px;
+    border-bottom: 2px solid gray;
+}
+
+#todo-text {
+    margin-bottom: 20px;
+    
+}
+/*Dynamic Styles */
+.strikethrough {
+    text-decoration: line-through;
+    text-decoration-color: black;
 }

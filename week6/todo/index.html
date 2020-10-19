@@ -3,21 +3,26 @@
     <head>
         <title>To-Do List</title>
         <link rel="stylesheet" href="todo.css">
-        <script src="javascript/todo.js"></script>
+        <script type="module" src="js/todo.js"></script>
     </head>
     <body>
         <header>
             <h1>To-Do List</h1>
         </header>
         <div id="list-section">
-            <ul id="list">
-                
-            </ul>
-            <input type="text" placeholder="Add New Item">
-            <button type="button" onclick="alertuser()">+</button>
-        </div>
-        <div id="controls">
+            <div id="todos">
 
+            </div>
+            <div id="add-buttons">
+                <input type="text" placeholder="Add New Item" id="todo-text">
+                <button id="addButton">+</button>
+            </div>
+            <div id="todos-filter">
+                <button id="completeFilter">Show Completed</button>
+                <button id="unfinishedFilter">Show Uncompleted</button>
+                <button id="resetFilter">Reset Filter</button>
+                <button id="resetButton">Clear the List</button>
+            </div>
         </div>
     </body>
 </html>
