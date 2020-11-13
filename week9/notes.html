@@ -7,7 +7,24 @@
         <h1>Notes:</h1>
         <p>Here's some notes about window objects:</p>
         <ul>The window object is equivalent to the global object when working in a browser environment.</ul>
-        <ul></ul>
+        <ul>
+            <li>window.navigator.userAgent will return information about the browser and machine the user is accessing the page on.</li>
+            <li>window.location access information about the URL. </li>
+            <li>window.location.href gets the URL of the page. New values can be assigned to this, and when the page reloads, it'll redirect to whatever is stored there.</li>
+            <li>window.location.protocol returns the protocol being used.</li>
+            <li>window.location.host will show where the website is being hosted.</li>
+            <li>window.location.reload() forces a reload from the server instead of using a cached version. (Possibly useful for testing so I don't get caught on hard refreshes when the dev tools aren't open?)</li>
+            <li>window.history can show a list of pages visited during the current browsing session. (sketchy! Haha). Add .length and it'll count how many were visited before arriving at the current page.</li>
+            <li>window.screen gives you insights into the screen size, length, width, etc.</li>
+            <li>document.cookie gives you some options with cookies attatched to the page.</li>
+        </ul>
+        <p>Some notes about HTML APIs:</p>
+        <ul>
+            <li>data- can be used to add basically custom attirbutes to an object. They're just for using in javascript. This week's group activity used these!</li>
+            <li>Web storage is basically an upgraded cookie.</li>
+            <li>The geolocation API gets a user's location, and other combinations with like navigator and such can get different information.</li>
+            <li>Web workers allows more than one javascript function to run at a time, allowing for larger programs to be pushed to the background so the page can load.</li>
+        </ul>
         <h2>Questions:</h2>
         <ul></ul>
     </body>
