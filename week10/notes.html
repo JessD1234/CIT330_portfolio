@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week 10 | Notes</title>
+    </head>
+    <body>
+        <h1>Notes:</h1>
+        <p>Reading about form verification was very interesting. At my job, we have what I assume is a form submitted by applicants and students all the time. I deal with the data on a daily basis, and a good portion of my time is spend validating the emails and cleaning up the names. I wonder if some form verification could be applied to clean up this process a bit. Unfortunately, I'm not really in a position to suggest this. I'm just a student employee. But I might try bringing it up to my boss anyway...</p>
+        <p>Here's some notes about form verification:</p>
+        <ul>
+            <li>Form verification happens before the form is sent to the server. It can help speed up the submission process by checking the form as the user goes, instead of making them wait for an error to come back.</li>
+            <li>Form verification can be used as a security measure, but shouldn't be relied on. It only checks that the data looks clean. Security measures should be implemented on the server side to double check.</li>
+            <li>The best use of form validation is to make sure the data is in the correct format, so when it's submitted to the server it can be stored correctly. This prevents errors in future uses of the data.</li>
+            <li>Form verification can be built in to hte HTML or it can be written in Javascript. Here are some examples:
+                <ul>
+                    <li>required - marks the field required. It must be filled out before the form can be submitted.</li>
+                    <li>minlength and maxlength - sets the length required for that field. Specific for text strings </li>
+                    <li>min and max - same as above, but for other data types.</li>
+                    <li>pattern - requires the data to conform to a certain preset pattern. (How to set these?)</li>
+                    <li>Javascript has similar elements as the above listed.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>Some notes about fetching:</p>
+        <ul>
+            <li>Fetch is an API. It's used with the fetch() method. This is used to fetch outside data and pull them into an application. You can write the source of the data in the (), and then what you want it to do with the data once it's fetched. But first, before it can be stored or manipulated, it has to be turned into a JSON file using json().</li>
+            <li>There are also a list of optional second parameters fetch() can accept. I'm not sure I understood what most of them do, but for the most part it seems to be like requirements the data has to have to be sent in?</li>
+        </ul>
+        <h2>Questions:</h2>
+        <ul></ul>
+    </body>
+    </html>
