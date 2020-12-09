@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Budget App</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="sidebar">
+            <h1>My Budget</h1>
+            <h2>Balance</h2>
+            <h4 id="topBalance"></h4>
+            <h3>Total Income</h3>
+            <h4 id="topIncome"></h4>
+            <h3>Total Expenses</h3>
+            <h4 id="topExpenses"></h4>
+            <button type="button" id="resetButton">Reset Budget</button>
+         <!--   <div id="credits">Budget App by Jessica Duckworth</div>-->
+        </div>
+        <div id="dashboard">
+            <h1>Dashboard</h1>
+            <div class="buttons">
+                <button id="exButton">Expenses</button>
+                <button id="inButton">Income</button>
+                <button id="allButton" class="active">All</button>
+            </div>
+            <div id="expenses" class="hide">
+                <div class="expensesList">
+                    
+                </div>
+                <div class="new-entry">
+                    <p class="addTagline">Add new item:</p>
+                    <input type="text" id="expensesTitle" name="title" placeholder="Entry Name">
+                    <input type="number" id="expensesAmount" name="amount" placeholder="$0">
+                    <button type="button" class="add-button" id="expensesAdd">Add</button>
+                </div>
+            </div>
+            <div id="income" class="hide">
+                <div class="incomeList">
+                    
+                </div>
+                <div class="new-entry">
+                    <p class="addTagline">Add new item:</p>
+                    <input type="text" id="incomeTitle" name="title" placeholder="Entry Name">
+                    <input type="number" id="incomeAmount" name="amount" placeholder="$0">
+                    <button type="button" class="add-button" id="incomeAdd">Add</button>
+                </div>
+            </div>
+            <div id="all">
+                <div class="allList">
+                    
+                </div>
+            </div>
+        </div>
+        <script src="javascript/main.js" type="module"></script>
+    </body>
+</html>

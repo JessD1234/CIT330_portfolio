@@ -1,0 +1,133 @@
+
+/*Things to finish:
+Finish formatting delete/edit buttons
+*/
+
+/*Layout*/
+
+html, body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#sidebar {
+    float: left;
+    background-color: #37123C;
+    margin-top: -20px;
+    padding: 20px 50px 50px 25px;
+    height: 100%;
+    padding-bottom: 1000px;
+    overflow: hidden;
+    max-height: 100%;
+    color: white;
+}
+
+#dashboard {
+    padding: 50px;
+    padding-left: 350px;
+    padding-top: 5px;
+}
+
+.expense, .income, .all {
+    display: grid;
+    grid-template-columns: auto 100px 40px 50px;
+    width: 600px;
+    padding: 10px 0px 10px 0px;
+    margin-right: 0px;
+    border-bottom: 1px solid gray;
+}
+
+/*Asthetics*/
+.entry {
+    font-weight: bold;
+}
+
+.expensesList, .incomeList, .allList {
+    margin: 20px 10px 50px 10px;
+}
+
+.buttons {
+    margin-top: 45px;
+}
+
+#topBalance {
+    font-size: 25px;
+    line-height: 0px;
+}
+
+#dashboard h1 {
+    color: #37123C;
+}
+
+#resetButton {
+    font-size: 15px;
+    background-color: #37123C;
+    border: 3px solid white;
+    border-radius: 3px;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#expensesAdd, #incomeAdd {
+    font-size: 15px;
+    color: #37123C;
+    border: 3px solid #37123C;
+    border-radius: 3px;
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#edit, #delete {
+    cursor: pointer;
+}
+
+/*Frequently used styles */
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+button {
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.red {
+    color: red;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #37123C;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+
+/* Button and tab styles used to update appearance when changing views */
+.hide {
+    display: none;
+}
+
+.active {
+    opacity: 1 !important;
+    border-bottom: 2px solid #37123C !important;
+}
+
+.buttons button {
+    border: 0px;
+    font-size: 25px;
+    background-color: white;
+    opacity: .75;
+    color: #37123C;
+}

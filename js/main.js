@@ -1,7 +1,7 @@
 var weekNav = document.querySelector(".week-navigation");
 
-var weekLabels = [ "Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "week 6", "week 7", "week 8", "week 9", "week 10", "week 11", "week 12", "week 13", "week 14"];
-var weekLinks = ["week1/week1.html", "week2/week2.html", "week3/week3.html", "week4/week4.html", "week5/week5.html", "week6/week6.html", "week7/week7.html", "week8/week8.html", "week9/week9.html", "week10/week10.html", "week11/week11.html", "week12/week12.html", "week13/week13.html", "week14/week14.html"];
+var weekLabels = [ "Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "week 6", "week 7", "week 8", "week 9", "week 10", "week 13", "week 14"];
+var weekLinks = ["week1/week1.html", "week2/week2.html", "week3/week3.html", "week4/week4.html", "week5/week5.html", "week6/week6.html", "week7/week7.html", "week8/week8.html", "week9/week9.html", "week10/week10.html", "week13/week13.html", "week14/week14.html"];
 
 //var weekLine = document.createElement ("li");
 //weekLine.textContent = "Week 1":
